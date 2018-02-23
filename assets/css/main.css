@@ -854,3 +854,17 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
+
+ /* Description */
+ #description {
+   color: #414f57;
+   font-family: "Source Sans Pro", Helvetica, sans-serif;
+   font-size: 11pt;
+   font-weight: 300;
+   line-height: 2;
+   letter-spacing: 0.2em;
+   text-transform: none;
+   text-align: left;
+   max-width: 400px;
+   display: inline-block;
+ }
