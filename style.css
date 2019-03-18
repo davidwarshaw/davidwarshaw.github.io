@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  color: black;
+}
+section {
+  height: 100vh;
+}
+hr {
+  height: 2px;
+  border-width: 0;
+
+  color: black;
+  background-color: black;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1.2em;
+}
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: grey;
+  text-decoration: underline;
+}
+
+.icon {
+  font-size: 4em;
+  margin: 2%;
+  vertical-align: middle;
+}
+a.icon:link, a.icon:visited {
+  color: black;
+  text-decoration: none;
+  padding: 5% 5%;
+}
+
+a.icon:hover, a.icon:active {
+  background-color: #b967ff;
+  color: white;
+}
+
+.stack-item {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+.stack-item a:link, .stack-item a:visited {
+  color: black;
+  text-decoration: none;
+  padding: 16px 24px;
+}
+.stack-item a:hover, .stack-item a:active {
+  background-color: #b967ff;
+  color: white;
+  font-weight: bold;
+}
+.footer-item {
+  margin: 2%;
+}
+.flex-stack {
+  display: flex;
+}
+
+#name {
+  position: relative;
+  height: 60vh;
+}
+#first-name {
+  font-size: 10em;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+  position: absolute;
+  bottom: 18%;
+
+  opacity: 0.5;
+  color: #05ffa1;
+}
+#last-name {
+  font-size: 10em;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+  position: absolute;
+  bottom: 0%;
+
+  opacity: 0.5;
+  color: #01cdfe;
+}
+#stacks {
+  display: flex;
+  height: 100vh;
+}
+#stacks-left {
+  flex: 50%;
+}
+#stacks-right {
+  flex: 50%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#footer {
+  font-size: .9em;
+  position: relative;
+  height: 75%
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .flex-stack {
+    flex-direction: column;
+  }
+
+  #first-name {
+    font-size: 4em;
+    bottom: 5%;
+  }
+  #last-name {
+    font-size: 4em;
+  }
+  #stacks-right {
+    grid-template-columns: 1fr 1fr;
+  }
+  #footer {
+    font-size: .9em;
+    height: 75%
+  }
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  #first-name {
+    font-size: 4em;
+    bottom: 8%;
+  }
+  #last-name {
+    font-size: 4em;
+  }
+  #stacks-right {
+    grid-template-columns: 1fr;
+  }
+  #footer {
+    font-size: .9em;
+    height: 100%
+  }
+}
