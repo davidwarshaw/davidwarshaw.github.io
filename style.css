@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 html {
   font-family: 'Poppins', sans-serif;
-  margin-left: 10%;
-  margin-right: 10%;
 
   color: black;
 }
 section {
-  height: 100vh;
+  width: 100vw;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 hr {
   height: 2px;
@@ -54,6 +54,12 @@ a.icon:hover, a.icon:active {
   color: white;
 }
 
+.stacks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+}
 .stack-item {
   font-size: 1.2em;
   display: flex;
@@ -62,7 +68,7 @@ a.icon:hover, a.icon:active {
 .stack-item a:link, .stack-item a:visited {
   color: black;
   text-decoration: none;
-  padding: 16px 24px;
+  padding: 8px 12px;
 }
 .stack-item a:hover, .stack-item a:active {
   background-color: #b967ff;
@@ -70,71 +76,40 @@ a.icon:hover, a.icon:active {
   font-weight: bold;
 }
 .footer-item {
-  margin: 2%;
+  margin: 2em;
 }
 .flex-stack {
   display: flex;
 }
 
-#name {
-  position: relative;
-  height: 60vh;
+#portrait {
+  border-radius: 0px;
+  width: 400px;
+  object-fit: cover;
 }
-#first-name {
-  font-size: 10em;
-  font-weight: bold;
-  margin-top: 1%;
-  margin-bottom: 1%;
 
-  position: absolute;
-  bottom: 18%;
-
-  opacity: 0.5;
-  color: #05ffa1;
-}
-#last-name {
-  font-size: 10em;
-  font-weight: bold;
-  margin-top: 1%;
-  margin-bottom: 1%;
-
-  position: absolute;
-  bottom: 0%;
-
-  opacity: 0.5;
-  color: #01cdfe;
-}
-#stacks {
-  display: flex;
-  height: 100vh;
-}
 #stacks-left {
-  flex: 50%;
+  padding: 1em;
 }
 #stacks-right {
-  flex: 50%;
-
+  padding: 1em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 #footer {
   font-size: .9em;
   position: relative;
-  height: 75%
+  height: 75%;
 }
 
 /* Tablet */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .flex-stack {
     flex-direction: column;
   }
-
-  #first-name {
-    font-size: 4em;
-    bottom: 5%;
-  }
-  #last-name {
-    font-size: 4em;
+ 
+  #portrait {
+    width: 300px;
   }
   #stacks-right {
     grid-template-columns: 1fr 1fr;
@@ -147,12 +122,8 @@ a.icon:hover, a.icon:active {
 
 /* Mobile */
 @media (max-width: 400px) {
-  #first-name {
-    font-size: 4em;
-    bottom: 8%;
-  }
-  #last-name {
-    font-size: 4em;
+  #portrait {
+    width: 200px;
   }
   #stacks-right {
     grid-template-columns: 1fr;
