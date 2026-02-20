@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 
   color: black;
 }
@@ -8,6 +8,12 @@ section {
   width: 100vw;
   margin-top: 10%;
   margin-bottom: 10%;
+}
+
+.whispering-earring {
+  width: min(50vw, 900px);
+  min-height: 50vh;
+  margin: 25vh auto;
 }
 hr {
   height: 2px;
@@ -28,12 +34,14 @@ h3 {
 p {
   font-size: 1.2em;
 }
-a:link, a:visited {
+a:link,
+a:visited {
   color: black;
   text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: grey;
   text-decoration: underline;
 }
@@ -43,13 +51,15 @@ a:hover, a:active {
   margin: 2%;
   vertical-align: middle;
 }
-a.icon:link, a.icon:visited {
+a.icon:link,
+a.icon:visited {
   color: black;
   text-decoration: none;
   padding: 5% 5%;
 }
 
-a.icon:hover, a.icon:active {
+a.icon:hover,
+a.icon:active {
   background-color: #b967ff;
   color: white;
 }
@@ -65,12 +75,17 @@ a.icon:hover, a.icon:active {
   display: flex;
   align-items: center;
 }
-.stack-item a:link, .stack-item a:visited {
+.stack-item-small {
+  font-size: 0.75em;
+}
+.stack-item a:link,
+.stack-item a:visited {
   color: black;
   text-decoration: none;
   padding: 8px 12px;
 }
-.stack-item a:hover, .stack-item a:active {
+.stack-item a:hover,
+.stack-item a:active {
   background-color: #b967ff;
   color: white;
   font-weight: bold;
@@ -97,17 +112,22 @@ a.icon:hover, a.icon:active {
   grid-template-columns: 1fr 1fr;
 }
 #footer {
-  font-size: .9em;
+  font-size: 0.9em;
   position: relative;
   height: 75%;
 }
 
 /* Tablet */
 @media (max-width: 850px) {
+  .whispering-earring {
+    width: 80vw;
+    margin: 10vh auto;
+  }
+
   .flex-stack {
     flex-direction: column;
   }
- 
+
   #portrait {
     width: 300px;
   }
@@ -115,13 +135,18 @@ a.icon:hover, a.icon:active {
     grid-template-columns: 1fr 1fr;
   }
   #footer {
-    font-size: .9em;
-    height: 75%
+    font-size: 0.9em;
+    height: 75%;
   }
 }
 
 /* Mobile */
 @media (max-width: 400px) {
+  .whispering-earring {
+    width: 90vw;
+    margin: 5vh auto;
+  }
+
   #portrait {
     width: 200px;
   }
@@ -129,7 +154,7 @@ a.icon:hover, a.icon:active {
     grid-template-columns: 1fr;
   }
   #footer {
-    font-size: .9em;
-    height: 100%
+    font-size: 0.9em;
+    height: 100%;
   }
 }
